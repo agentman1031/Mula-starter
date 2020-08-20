@@ -1,4 +1,4 @@
-package com.example.mula_starter.activity.data.database.model
+package com.example.mula_starter.data.database.model
 
 import androidx.room.Embedded
 import androidx.room.Entity

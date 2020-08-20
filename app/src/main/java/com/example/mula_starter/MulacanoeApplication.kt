@@ -1,8 +1,8 @@
-package com.example.mula_starter.activity.ui
+package com.example.mula_starter
 
 import android.app.Application
 import androidx.room.Room
-import com.example.mula_starter.activity.data.database.AllocationDatabase
+import com.example.mula_starter.data.database.AllocationDatabase
 
 class MulacanoeApplication : Application() {
     companion object {

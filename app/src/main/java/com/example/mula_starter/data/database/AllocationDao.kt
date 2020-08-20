@@ -1,10 +1,8 @@
-package com.example.mula_starter.activity.data.database
+package com.example.mula_starter.data.database
 import android.renderscript.Allocation
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.mula_starter.activity.data.database.model.Expenses
 
 @Dao
 interface AllocationDao {
