@@ -12,7 +12,7 @@ class MulacanoeApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        database = Room
+        MulacanoeApplication.database = Room
             .databaseBuilder(
                 this,
                 AllocationDatabase::class.java,
