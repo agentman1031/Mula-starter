@@ -1,10 +1,7 @@
 package com.example.mula_starter.data.database
-import android.renderscript.Allocation
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.mula_starter.data.database.model.Expense
 import com.example.mula_starter.data.database.model.InitialBalance
 
 @Dao
@@ -26,7 +23,7 @@ interface AllocationDao {
     @Query("SELECT * FROM allocations")
     fun getAll(): List<InitialBalance>
     @Insert
-    fun insertInitialBalance(initialBalance: InitialBalance)
+    fun insertInitialBalance(initialInitialBalance: InitialBalance)
 
 
 }

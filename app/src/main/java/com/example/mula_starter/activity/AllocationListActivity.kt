@@ -3,21 +3,13 @@ package com.example.mula_starter.activity;
 import android.os.Bundle
 import android.renderscript.Allocation
 import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.DefaultItemAnimator
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.mula_starter.R
 import com.example.mula_starter.data.AllocationAdapter
 import com.example.mula_starter.data.database.AllocationDatabase
 import com.example.mula_starter.data.database.model.InitialBalance
-import com.example.mula_starter.ui.NewAllocationDialog
-import kotlinx.android.synthetic.main.activity_allocation_list.*
 
 class AllocationListActivity: AppCompatActivity() {
 
@@ -37,9 +29,10 @@ class AllocationListActivity: AppCompatActivity() {
             .build()
         database.allocationDao().insertInitialBalance(
             InitialBalance(
-                initialBalance = 911.00f,
-                expense = null,
-                id = 0
+                id = 0,
+                balanceInput = 911.01f,
+                expense = null
+
             )
         )
 
