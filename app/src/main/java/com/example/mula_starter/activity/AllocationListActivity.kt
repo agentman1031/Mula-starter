@@ -10,6 +10,7 @@ import com.example.mula_starter.R
 import com.example.mula_starter.data.AllocationAdapter
 import com.example.mula_starter.data.database.AllocationDatabase
 import com.example.mula_starter.data.database.model.InitialBalance
+import kotlinx.android.synthetic.main.activity_allocation_list.*
 
 class AllocationListActivity: AppCompatActivity() {
 
@@ -37,6 +38,10 @@ class AllocationListActivity: AppCompatActivity() {
         )
 
         val allAllocations = database.allocationDao().getAll()
+
+        allAllocations.forEach {
+            txtRemainingBalance.append(it.balanceInput.toString())
+        }
 
         Log.d("scott", "allAllocation size? ${allAllocations}")
     }
