@@ -7,11 +7,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mula_starter.R
 import com.example.mula_starter.activity.AllocationListActivity
-import com.example.mula_starter.data.database.model.Allocation
+import com.example.mula_starter.data.database.model.InitialBalance
 
 data class AllocationAdapter(
     private val allocationRecyclerView: AllocationListActivity,
-    private val allocationList: ArrayList<Allocation>
+    private val allocationList: ArrayList<InitialBalance>
 )
     : RecyclerView.Adapter<AllocationAdapter.ListItemHolder>() {
 
